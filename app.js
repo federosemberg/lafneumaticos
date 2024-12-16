@@ -55,7 +55,7 @@ whatsapp.client.on('message', async (message) => {
 async function startServer() {
     try {
         await googleSheets.initialize();
-        //whatsapp.initialize();
+        whatsapp.initialize();
         app.listen(PORT, () => {
             console.log(`Server running on port ${PORT}`);
         });
